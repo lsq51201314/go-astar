@@ -161,7 +161,7 @@ func (a *Astar) GetPath() []Point {
 	return a.path
 }
 
-//CheckPoint 同行状态
+//CheckPoint 通行状态
 func (a *Astar) CheckPoint(x, y int32) bool {
 	if x < 0 || x > a.width-1 || y < 0 || y > a.height-1 {
 		return false
